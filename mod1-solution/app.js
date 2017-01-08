@@ -2,10 +2,10 @@
 'use strict';
 
 angular.module('LunchCheck', [])
-.controller('LunchCheckController', MyController);
+.controller('LunchCheckController', LunchCheckController);
 
-MyController.$inject = ['$scope'];
-function MyController ($scope) {
+LunchCheckController.$inject = ['$scope'];
+function LunchCheckController ($scope) {
   $scope.inputText = "";
 
   $scope.checkLunch = function ($event) {
