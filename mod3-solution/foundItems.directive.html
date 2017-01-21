@@ -1,5 +1,6 @@
+<div ng-if="foundItems.length < 1">Nothing found</div>
 <table class = "table" ng-if="foundItems.length>0">
-  <th>name</th><th>short Name</th><th>Description</th><th>Select</th>
+  <th>Name</th><th>short Name</th><th>Description</th><th>Select</th>
   <tr ng-repeat="item in foundItems">
       <td>{{item.name}}</td><td>{{item.short_name}}</td><td>{{item.description}}</td>
       <td><button class="btn" ng-click="onRemove({dummy: $index})">Don't want this one!</button></td>
