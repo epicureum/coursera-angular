@@ -1,7 +1,7 @@
 <table class = "table" ng-if="foundItems.length>0">
-  <th>id</th><th>short Name</th><th>Description</th><th>Select</th>
+  <th>name</th><th>short Name</th><th>Description</th><th>Select</th>
   <tr ng-repeat="item in foundItems">
-      <td>{{item.id}}</td><td>{{item.name}}</td><td>{{item.description}}</td>
+      <td>{{item.name}}</td><td>{{item.short_name}}</td><td>{{item.description}}</td>
       <td><button class="btn" ng-click="onRemove({dummy: $index})">Don't want this one!</button></td>
   </tr>
 </table>
